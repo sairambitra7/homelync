@@ -1,0 +1,299 @@
+<!-- <div fxLayout="row wrap" fxLayoutAlign="space-around center">
+  <mat-toolbar>
+    <div fxLayout="row wrap" fxLayoutAlign="start centre">
+      <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="30" fxFlex.xl="50">
+        <div class="logo">
+          <img src="/assets/logo.png">
+        </div>
+      </div>
+    </div>
+
+    <div fxLayout="row wrap" fxLayoutAlign="end start">
+      <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50">
+
+
+        <ul fxLayout="row" fxLayoutGap="20px" class="under">
+          <li>COURSES</li>
+          <li>PROGRAMS</li>
+          <li>INNOVATION</li>
+          <li>INCUBATION</li>
+          <li>EVENTS</li>
+          <li>CONTACT US</li>
+
+          <li>
+            <button mat-button class="button1">BOOK APPOINTMENT</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </mat-toolbar>
+</div> -->
+
+
+
+<div fxLayout="row" fxLayoutAlign="space-around center">
+
+  <div class="backimg">
+    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+      <div class="matter">
+        <h1>The Advanced Technology Learning Hub</h1>
+        <h2>Classroom And Online</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="space-around center">
+  <div class="mldcards">
+    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+      <div class="mld">
+        <h2>Why Digital Lync is Special!</h2>
+      </div>
+    </div>
+
+
+
+    <div fxLayout="row"  fxLayout.xs="column" fxLayout.sm="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="space-around center" class="cad">
+      <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25">
+        <div class="image">
+          <img src="/assets/team.png">
+          <h4>The Best Trainers</h4>
+          <p>Our developers are our trainers! our trainers spend half of their time on products at our innovation center.</p>
+        </div>
+      </div>
+
+
+
+      <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25">
+        <div class="image">
+          <img src="/assets/2.png">
+
+          <h4>Class room & Online</h4>
+          <p>Our online experiance is as good as our in class experiance. Our programs offer end to personal interaction with
+            students.</p>
+        </div>
+      </div>
+
+      <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25">
+        <div class="image">
+          <img src="/assets/3.png">
+
+          <h4>We are Committed</h4>
+          <p>We consider your success to be ours. Your achivement is our commitment. We teach until you learn.</p>
+        </div>
+      </div>
+
+      <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25">
+        <div class="image">
+          <img src="/assets/4.png">
+
+          <h4>Really Affordable</h4>
+          <p>We believe in a collaborative, cool and learn friendly environment. Our promise, is to provide all this for no
+            additional charge.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.md="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="space-around center">
+      <div class="mldcards1">
+        <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+          <div class="mld1">
+            <h2>How are we Different</h2>
+          </div>
+        </div>
+      
+
+          
+        <div fxLayout="row" fxLayout.xs="column" fxLayout.md="column"  fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign=" center" class="cad1">
+          
+          <div class="image1" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" *ngFor="let item of cardlist" (click)="onSelect(item)">
+            <img src={{item.imagepath}}>
+            <h4>{{item.title}}</h4>
+        
+        </div>
+        </div>
+
+        <div fxLayout="row" fxLayout.xs="column" fxLayout.md="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign=" center" class="cad1">
+      
+            <div class="image1" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" *ngFor="let item of list" (click)="onSelect(item)">
+              <img src={{item.imagepath}}>
+              <h4>{{item.title}}</h4>
+        
+          </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div fxLayout="row" fxLayout.xs="column" fxLayout.md="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="space-around center">
+        <div class="stepper">
+          <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+            <div class="step">
+              <h2>Our Process</h2>
+            </div>
+          </div>
+          </div>
+          </div>
+        
+
+      <div fxLayout="row" fxLayout.xs="column" fxHide.xs fxHide.sm  fxLayoutGap="0.5%" fxLayoutAlign="center" class="marg" >
+        
+        <div fxFlex.xs="100"  fxFlex.sm="50"   fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25">
+            <div class="procnum">1</div>
+          </div>
+          <div fxFlex.xs="100"  fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25" >
+            <div class="procnum">2</div>
+          </div>
+          <div fxFlex.xs="100"  fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25" >
+            <div class="procnum">3</div>
+          </div>
+        </div>
+        <div fxLayout="row" fxLayout.xs="column " fxHide.xs fxHide.sm fxLayoutGap="0.5%" fxLayoutAlign="center">
+          <div class="imagline">
+            <img src="/assets/line.png" style="height:11px; width: 699px;">
+          </div>
+         </div> 
+
+         <div fxLayout="row" fxLayout.xs="column"  fxLayoutGap="0.5%" fxLayoutAlign="center" class="padd" >
+         <div fxFlex.xs="100"  fxFlex.sm="50"   fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25">
+          <div class="career">
+            <h4>Career Guidance</h4>
+            <p>Our expert counsellors analyse your skill and match your skills to an industry trending courses and advise you of the many opportunities.</p>
+          </div>
+        </div>
+        <div fxFlex.xs="100"  fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25" >
+          <div class="career">
+            <h4>Choose Course</h4>
+            <p>You pick a course according to your passion and vision. We guide you through the process. Mentor you and help you throughout your learning process. </p>
+          </div>
+        </div>
+        <div fxFlex.xs="100"  fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25" >
+          <div class="career">
+            <h4>Placement assistance</h4>
+            <p>We are a link to your awesome future! We will be your wing man for your job. We recognize your skills, enhance them and present you to the coolest companies.</p>
+          </div>
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayout.xs="column" fxLayout.md="column"  fxLayoutGap="0.5%" fxLayoutAlign="center">
+        <div class="social">
+          <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+            <div class="soc">
+              <h2>Our Reviews</h2>
+            </div>
+          </div>
+      
+      
+          <div fxLayout="row" fxLayout.xs="column" fxLayout.md="column"   fxLayoutGap="0.5%" fxLayoutAlign=" center" class="soci">
+          
+            <div class="" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="50" *ngFor="let item of images" (click)="onSelect(item)">
+              <img src={{item.imagepath}}>
+              
+          
+          </div>
+          </div>
+          </div>
+          </div>
+      
+
+          <div fxLayout="row" fxLayout.xs="column" fxLayout.md="column"  fxLayoutGap="0.5%" fxLayoutAlign="center">
+            <div class="card">
+              <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+                <div class="cardh">
+                  <h2>We partner with the Best</h2>
+                </div>
+              </div>
+          
+          
+              <div fxLayout="row" fxLayout.xs="column" fxLayout.md="column"   fxLayoutGap="0.5%" fxLayoutAlign="center" class="cardi">
+              
+                <div class="" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25" *ngFor="let item of card" (click)="onSelect(item)">
+                  <img src={{item.imagepath}}>
+                  
+              
+              </div>
+              </div>
+              </div>
+              </div>
+
+
+              <div fxLayout="row"  fxLayout.xs="column" fxLayout.sm="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="space-around center" class="foot">
+      <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25">
+        <div class="foot1">
+            <div class="logo">
+                <img src="/assets/logo1.png">
+              </div>
+          
+        </div>
+      </div>
+
+
+
+      <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25" >
+        <div class="foot1">
+        <h4>COMPANY</h4>
+        </div>
+        <div class="para">
+          <P>ABOUT</P>
+          <P>BLOG</P>
+          <P>JOBS</P>   
+          
+        </div>
+      </div>
+
+      <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25">
+        <div class="foot1">
+            <h4>INTRESTED LINKS</h4>
+          </div>
+          <div class="para">
+            <P>EDUCATION</P>
+            <P>INNOVATION</P>
+            <P>INCUBATION</P>
+          </div>
+        </div>
+    
+       
+
+        <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25">
+            <div class="foot1">
+                <h4>DROP A MESSAGE</h4>
+              </div>
+              <div class="para">
+                <P>EDUCATION</P>
+                <P>INNOVATION</P>
+                <P>INCUBATION</P>
+              </div>
+            </div>
+
+            <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25">
+                <div class="foot1">
+                    <h4>CONTACT US</h4>
+                  </div>
+                  <div class="para">
+                    <P>EDUCATION</P>
+                    <P>INNOVATION</P>
+                    <P>INCUBATION</P>
+                  </div>
+
+                </div>    
+              
+      
+      
+      
+  
+
+
+
+
+
+
+
+
+    <router-outlet></router-outlet>
